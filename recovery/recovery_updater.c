@@ -225,7 +225,7 @@ static Value* WriteSecondBootloaderFn(const char *name, State *state, int argc, 
     return StringValue(strdup(result == 0 ? "t" : ""));
 }
 
-void Register_librecovery_updater_s5p6818_drone() {
+void Register_librecovery_updater_s5p4418_drone() {
     fprintf(stderr, "installing nexell.pyrope updater extensions\n");
     RegisterFunction("nexell.pyrope.write_boot_image", WriteBootImageFn);
     RegisterFunction("nexell.pyrope.write_bootloader", WriteBootloaderFn);
