@@ -17,3 +17,6 @@
 
 # hdmi-cec
 /dev/hdmi-cec             0666   system     system
+
+# uibc
+/dev/input/event*         0777   system     system
