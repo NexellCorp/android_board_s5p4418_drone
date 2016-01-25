@@ -234,6 +234,9 @@ on post-fs-data
     #setprop vold.post_fs_data_done 1
 
 on boot
+	# Set default media player to awesome player
+	setprop media.stagefright.use-awesome 1
+
 # basic network init
     ifup lo
     hostname localhost
