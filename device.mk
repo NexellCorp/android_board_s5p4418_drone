@@ -344,5 +344,6 @@ $(call inherit-product-if-exists, hardware/samsung_slsi/slsiap/slsiap.mk)
 #$(call inherit-product-if-exists, vendor/google/gapps/gapps.mk)
 
 # Nexell Application
-#$(call inherit-product-if-exists, vendor/nexell/apps/nxapps.mk)
+$(call inherit-product-if-exists, vendor/nexell/apps/nxvideoplayer.mk)
+$(call inherit-product-if-exists, vendor/nexell/apps/nxaudioplayer.mk)
 $(call inherit-product-if-exists, vendor/nexell/apps/smartsync.mk)
