@@ -125,9 +125,6 @@ on boot
     # Set default media player to awesome player
     setprop media.stagefright.use-awesome 1
 
-    # Set video player to nexell player
-    setprop persist.sys.media.use-nexell true    
-    
 on fs
     mount_all /fstab.s5p4418_drone
     setprop ro.crypto.fuse_sdcard true
