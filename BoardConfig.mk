@@ -22,16 +22,14 @@ TARGET_NO_RADIOIMAGE := false
 # recovery
 TARGET_RECOVERY_FSTAB := device/nexell/s5p4418_drone/recovery.fstab
 
-#TARGET_RELEASETOOLS_EXTENSIONS := device/nexell/s5p4418_drone
-#TARGET_RECOVERY_UPDATER_LIBS += librecovery_updater_s5p4418_drone
-#TARGET_RECOVERY_UI_LIB := librecovery_ui_s5p4418_drone
-# TARGET_RECOVERY_PIXEL_FORMAT not specified ==> rgb565
+TARGET_RELEASETOOLS_EXTENSIONS := device/nexell/s5p4418_drone
+TARGET_RECOVERY_UPDATER_LIBS += librecovery_updater_s5p4418_drone
 
 # 2ndbootloader, bootloader
-#$(call add-radio-file,2ndbootloader)
-#$(call add-radio-file,bootloader)
-#INSTALLED_RADIOIMAGE_TARGET += 2ndbootloader
-#INSTALLED_RADIOIMAGE_TARGET += bootloader
+$(call add-radio-file,2ndbootloader)
+$(call add-radio-file,bootloader)
+INSTALLED_RADIOIMAGE_TARGET += 2ndbootloader
+INSTALLED_RADIOIMAGE_TARGET += bootloader
 #$(warning INSTALLED_RADIOIMAGE_TARGET: $(INSTALLED_RADIOIMAGE_TARGET))
 
 # certificate
