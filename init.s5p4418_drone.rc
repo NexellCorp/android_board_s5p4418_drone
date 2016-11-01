@@ -249,3 +249,6 @@ service reporthwc /system/bin/report_hwc_scenario
 
 on property:persist.hwc.resolution=*
     start reporthwc
+
+on property:service.bootanim.exit=1
+    write sys/hdmi_sysfs/write 1
